@@ -27,10 +27,10 @@ function GUARDAR(){
 function OBTENER_CLIENTES(){
 
     if ("lista_clientes" in localStorage){
-        let l_clientes =  JSON.parse( localStorage.getItem("lista_clientes"))
+        let clientes =  JSON.parse( localStorage.getItem("lista_clientes"))
 
         filas = []
-        l_clientes.forEach( (element,index) => {
+        clientes.forEach( (element,index) => {
             let fila = `
                 <tr>
                     
