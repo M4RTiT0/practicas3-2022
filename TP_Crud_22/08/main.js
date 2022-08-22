@@ -1,3 +1,5 @@
+
+
 function GUARDAR(){
 
     let n_cliente = {
@@ -49,7 +51,10 @@ function OBTENER_CLIENTES(){
 
         document.getElementById("tbody").innerHTML = filas.join('')
     }
+
 }
+
+OBTENER_CLIENTES() // Esto se escribe asi para que aparezca la tabla con datos guardados sin tener que guardar algo antes
 
 function ELIMINAR_CLIENTE(index){
     let lista_clientes = JSON.parse( localStorage.getItem("lista_clientes"))
@@ -95,4 +100,3 @@ function ACTUALIZAR_CLIENTE(){
     document.getElementById("form_cliente").reset() 
 }
 document.getElementById("btn_actualizar").addEventListener("click",ACTUALIZAR_CLIENTE)
-document.getElementById("form_cliente").reset() 
