@@ -1,7 +1,7 @@
 function GUARDAR(){
 
     let n_cliente = {
-        direccionip:document.getElementById("ip").value,
+        ip:document.getElementById("ip").value,
         puerto:document.getElementById("puerto").value,
         pais:document.getElementById("pais").value,
         ciudad:document.getElementById("ciudad").value,
@@ -95,3 +95,4 @@ function ACTUALIZAR_CLIENTE(){
     document.getElementById("form_cliente").reset() 
 }
 document.getElementById("btn_actualizar").addEventListener("click",ACTUALIZAR_CLIENTE)
+document.getElementById("form_cliente").reset() 
