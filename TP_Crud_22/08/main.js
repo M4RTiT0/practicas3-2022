@@ -1,7 +1,7 @@
 function GUARDAR(){
 
     let n_cliente = {
-        direccionip:document.getElementById("direccionip").value,
+        direccionip:document.getElementById("ip").value,
         puerto:document.getElementById("puerto").value,
         pais:document.getElementById("pais").value,
         ciudad:document.getElementById("ciudad").value,
@@ -19,7 +19,7 @@ function GUARDAR(){
         localStorage.setItem("lista_clientes", JSON.stringify(g_clientes))
     }
     document.getElementById("form_cliente").reset() 
-    
+
     OBTENER_CLIENTES()
 }
 function OBTENER_CLIENTES(){
