@@ -2,7 +2,7 @@
   <nav>
     <router-link to="/">Casita</router-link> /
     <router-link to="/about">Mas</router-link> /
-    <router-link to="/Cliente">Cliente</router-link>
+    <router-link to="/Clientes">Cliente</router-link>
   </nav>
   <router-view/>
 </template>

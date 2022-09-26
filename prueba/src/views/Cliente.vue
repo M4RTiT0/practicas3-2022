@@ -1,5 +1,5 @@
 <template>
-    <FormCliente />
+    <FormCliente/>
 </template>
 <script>
 /* eslint-disable */
