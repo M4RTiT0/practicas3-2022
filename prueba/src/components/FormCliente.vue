@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <div class="col-lg-4">
-            <h2> Probando Componentes </h2>
+            <h3>Probando Componentes</h3>
             <div class="mb-3">
                 <label class="form-label">Nombre</label>
                 <input v-model="nombre" class="form-control" type="text">
@@ -10,9 +10,10 @@
         </div>
         
         <div class="col-lg-8">
-            <table>
+            <table class="table">
                 <thead>
                     <tr>
+                        <th>N°</th>
                         <th>Nombre</th>
                         <th>Usuario</th>
                         <th>Correo</th>
@@ -21,11 +22,11 @@
                 </thead>
                 <tbody>
                     <tr v-for="(u,index) of lista_usuarios" v-bind:key="index">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{index}}</td>
+                        <td>{{u.name}}</td>
+                        <td>{{u.username}}</td>
+                        <td>{{u.email}}</td>
+                        <td>{{u.website}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -49,9 +50,7 @@ export default {
             alert(nombre.value)
         }
 
-        function mostrar_mensaje(){
-            alert(nombre.value)
-        }
+  
 
         async function consumir_api(){
             const usuarios = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -62,14 +61,12 @@ export default {
             nombre,
             mostrar,
             mensaje,
-            mostrar_mensaje,
             consumir_api,
             lista_usuarios
         }
 
     },
     created(){
-        this.mostrar_mensaje()
         this.consumir_api()
     }
 }
