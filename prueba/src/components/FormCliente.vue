@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+<div class="row">
         <div class="col-lg-4">
             <div class="mb-3">
                 <label class="form-label">Nombre</label>
