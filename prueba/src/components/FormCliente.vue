@@ -7,7 +7,6 @@
             </div>
             <button @click="mostrar()" class="btn btn-success">Aceptar</button>
         </div>
-        
         <div class="col-lg-8">
             <table class="table">
                 <thead>
