@@ -1,7 +1,6 @@
 <template>
     <div class="row">
         <div class="col-lg-4">
-            <h3>Probando Componentes</h3>
             <div class="mb-3">
                 <label class="form-label">Nombre</label>
                 <input v-model="nombre" class="form-control" type="text">
