@@ -19,12 +19,18 @@ const routes = [
     path: '/clientes',
     name: 'Cliente',
     component: () => import('../views/Cliente.vue')
+  },
+
+  {
+    path: '/Productos',
+    name: 'Producto',
+    component: () => import('../views/Producto.vue')
   }
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
   routes
-})
+},)
 
 export default router
