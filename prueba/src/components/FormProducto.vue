@@ -1,38 +1,20 @@
 <template>
     <div class="row">
-        <div class="col-lg-8">
             <h4>{{titulo}}</h4>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>N°</th>
-                        <th>Modelo</th>
-                        <th>Descripcion</th>
-                        <th>Precio</th>
-                        <th>% de descuento</th>
-                        <th>Reputacion</th>
-                        <th>stock Disponible</th>
-                        <th>Marca</th>
-                        <th>Categoria</th>
-                        <th>Imagen</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="(u,index) of lista_productos" v-bind:key="index">
-                        <td>{{index}}</td>
-                        <td>{{u.title}}</td>
-                        <td>{{u.description}}</td>
-                        <td>{{u.price}}</td>
-                        <td>{{u.discountPercentage}}</td>
-                        <td>{{u.rating}}</td>
-                        <td>{{u.stock}}</td>
-                        <td>{{u.brand}}</td>
-                        <td>{{u.category}}</td>
-                        <td><img :src=u.thumbnail class="img-fluid" style="width:20rem"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                <div class="col-lg-4 mb-3" v-for="(p,index) of lista_productos" v-bind:key="index">
+                    <div class="card" style="width: 18rem;">
+                            <div class="card-body bg-primary">
+                                <p class="card-text">{{p.title}}</p>
+                                <p><img :src=p.thumbnail class="img-fluid" style="width:20rem"></p>
+                                <p class="card-text">description {{p.description}}</p>
+                                <p class="card-text">Precio: {{p.price}}</p>
+                                <p class="card-text">Popularidad: {{p.rating}}</p>
+                                <p class="card-text">Stock: {{p.stock}}</p>
+                                <p class="card-text">Marca: {{p.brand}}</p>
+                                <p class="card-text">Categoria: {{p.category}}</p>
+                            </div>
+                    </div>
+                </div>
     </div>
 </template>
 <script>
