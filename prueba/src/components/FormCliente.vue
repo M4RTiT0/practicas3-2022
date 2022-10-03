@@ -5,7 +5,7 @@
                 <label class="form-label">Nombre</label>
                 <input v-model="nombre" class="form-control" type="text">
             </div>
-            <button @click="mostrar()" class="btn btn-success">Aceptar</button>
+            <button @click="mostrar()" class="btn btn-light text-primary">Aceptar</button>
         </div>
         <div class="col-lg-8">
             <table class="table">
@@ -40,7 +40,7 @@ export default {
 
         //sector de variables
         let nombre = ref('')
-        let mensaje = ref('Probando')
+        let mensaje = ref('Ese boton no hace nada')
         let lista_usuarios = ref([])
 
         //sector de funciones

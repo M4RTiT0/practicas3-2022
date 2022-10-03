@@ -4,13 +4,13 @@
                 <div class="col-lg-4 mb-3" v-for="(p,index) of lista_productos" v-bind:key="index">
                     <div class="card" style="width: 18rem;">
                             <div class="card-body bg-primary">
-                                <p class="card-text">{{p.title}}</p>
+                                <p class="card-text text-white">{{p.title}}</p>
                                 <p><img :src=p.thumbnail class="img-fluid" style="width:20rem"></p>
-                                <p class="card-text">description {{p.description}}</p>
+                                <p class="card-text text-white">description {{p.description}}</p>
                                 <p class="card-text">Precio: {{p.price}}</p>
-                                <p class="card-text">Popularidad: {{p.rating}}</p>
+                                <p class="card-text text-white">Popularidad: {{p.rating}}</p>
                                 <p class="card-text">Stock: {{p.stock}}</p>
-                                <p class="card-text">Marca: {{p.brand}}</p>
+                                <p class="card-text text-white">Marca: {{p.brand}}</p>
                                 <p class="card-text">Categoria: {{p.category}}</p>
                             </div>
                     </div>
