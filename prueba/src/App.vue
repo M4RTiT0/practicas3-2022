@@ -8,16 +8,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <router-link class="nav-link" to="/">Casita</router-link> 
+          <router-link class="nav-link text-light" to="/">Casita</router-link> 
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/about">Mas</router-link> 
+          <router-link class="nav-link text-light" to="/about">Mas</router-link> 
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/Clientes">Clientes</router-link> 
+          <router-link class="nav-link text-light" to="/Clientes">Clientes</router-link> 
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/Productos">Producto</router-link>
+          <router-link class="nav-link text-light" to="/Productos">Producto</router-link>
         </li>
       </ul>
     </div>
